@@ -1,0 +1,7 @@
+/*create table employees (employee_id number(6) constraint emp_employee_id primary key, first_name varchar2(20), last_name varchar2(25) constraint emp_last_name_nn not null,
+email varchar2(25) constraint emp_email_nn not NULL constraint emp_email_uk unique,
+phone_number varchar(20), hire_date DATE constraint emp_hire_date_nn not NULL , jobid varchar2(10) constraint emp_job_nn not NULL,
+salary number(8,2) constraint emp_salary_ck check (salary>1000),commission_pct number(2,2), manager_id number(6) constraint emp_manager_fk references employees(employee_id),
+department_id number(4) constraint emp_dept_fk references dept(deptno));*/
+--create table dept80 as select employee_id, last_name,salary*12 annsal,hire_date from employees where department_id = 80;
+create table people ( person_id interger not null primary key, given_name varchar2(100) not null, family_name varchar2(100) not null, title varchar2(20), birth_date DATE);
