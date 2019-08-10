@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #timediv {
+        background: rgb(211, 252, 27);
+        height: 50px;
+        width: 100px;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 30px;
+        color: #fff;
+        margin: 50px auto;
+        text-align: center;
+        text-shadow: 2px 2px #00fff2;
+        color: rgb(51, 51, 51);
+    }
+</style>
+
+<body>
+    <div id="timediv">
+    </div>
+    <script>
+        window.setInterval(function() {
+            CurrentLocalTime()
+        }, 1000);
+
+        function CurrentLocalTime() {
+            var dte = new Date();
+            var tme = dte.toLocaleTimeString();
+            document.getElementById("timediv").innerHTML = tme;
+        }
+    </script>
+</body>
+
+</html>

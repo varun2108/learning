@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function myfun() {
+        var a = parseInt(prompt("enter the devisor", "the number"));
+        var b = parseInt(prompt("enter the dividend", "enter 0 to see exception handling"));
+        try {
+            if (b == 0) {
+                throw new Error("divide by zero error!");
+            } else {
+                throw new Error("anser is" + eval(a / b))
+            }
+        } catch (e) {
+            alert(e);
+        }
+    }
+</script>
+
+<body>
+    <button type="button" onclick="myfun()">click me</button>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Enter your phone number and preess enter</p>
+    <form action="">
+        <input name="txtPhone" onchange="phonevalidation(this);">
+    </form>
+    <script>
+        var reg = /^\d{10}$/;
+
+        function phonevalidation(phonenumber) {
+            var ok = reg.exec(phonenumber.value);
+            if (!ok)
+                window.alert("phone number isn't valid");
+            else
+                window.alert("phone number is valid");
+        }
+    </script>
+</body>
+
+</html>

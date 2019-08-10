@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function squere() {
+        var a = parseInt(document.getElementById("val").value);
+        document.getElementById("ans").innerHTML = a * a;
+    }
+</script>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+    
+    table {
+        margin-left: 30%;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td>Number</td>
+            <td>Answer</td>
+        </tr>
+        <tr>
+            <td><input type="number" name="" id="val"></td>
+            <td id="ans"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center><button type="button" onclick="squere()">find squere</button></center>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

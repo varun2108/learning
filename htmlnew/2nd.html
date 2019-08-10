@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms</title>
+    <script>
+        var c=document.getElementById("bg").value;
+        var b=document.getElementById("bd");
+        b.style.backgroundColor=c;
+    </script>
+</head>
+<body bgcolor="gray" id="bd">
+    <table Cellpadding="10" width="1000" align="center" style="background-image:url(desert.jpg);background-size: cover;" >
+        <center>
+            <caption align="top">
+                <h2 style="color:white">APPLICATION FORM</h2>
+            </caption>
+            <form>
+                <font face="Courier New" size="4" c>
+                    <tr>
+                        <td>
+                            First Name :
+                        </td>
+                        <td>
+                            <input type="text" name="Fname" id="" size="30" maxlength="30" value="" required autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                Last Name:
+                            </td>
+                            <td>
+                                <input type="text" name="Ename" id="" size="30" maxlength="30" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Education :
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Education" value="Graduate" id="" checked>
+                                Graduate
+                                <input type="checkbox" name="Education" value="undergrauate" id="">
+                                Under Graduate
+                                
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Gender :</td>
+                            <td>
+                                <input type="radio" name="Gender" id="" value="male" checked>male
+                                <input type="radio" name="Gender" id="" value="Female">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Salary :</td>
+                            <td>
+                                <input type="password" name="Salary" id="" size="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comments:</td>
+                            <td>
+                                <textarea name="" id="" cols="50" rows="5" wrap="physical" tabindex="8"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>
+                                <select name="state" id="" tabindex="9">
+                                    <option>Andrapradesh&nbsp; &ensp; </option>
+                                    <option value="">karnataka </option>
+                                    <option value="">kerala</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                             <td>
+                                 Programing Languages:
+                             </td>
+                             <td>
+                                 <input list="Languages"/>
+                                 <datalist id="Languages">
+                                     <option value="Cpp"></option>
+                                     <option value="Java"></option>
+                                     <option value="python"></option>
+                                    <option value="js"></option>
+                                    </datalist>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Select Color:
+                            </td>
+                            <td>
+                                <input type="color" name="
+                                " id="bc">
+                            </td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>Meating Date</td>
+                                <td>
+                                    <input type="date" name="" id="meating">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Meating Date and Time</td>
+                                <td>
+                                    <input type="datetime-local" name="mdate" id="mdate">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>
+                                    <input type="email" name="" id="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Web Site</td>
+                                <td>
+                                    <input type="url" name="website" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>
+                                    <input type="tel" name="" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                                </td>
+                            </tr>
+                            <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+            </form>
+        </center>
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Risc gimes</name>
+        <age>35</age>
+        <subject>math</subject>
+        <gender>male</gender>
+    </student>
+    <student>
+        <name>Rakshith</name>
+        <age>25</age>
+        <subject>math</subject>
+        <gender>male</gender>
+    </student>
+    <student>
+        <name>abhi</name>
+        <age>31</age>
+        <subject>math</subject>
+        <gender>male</gender>
+    </student>
+</students>

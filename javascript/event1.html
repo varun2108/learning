@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "HelloWorld";
+        }
+
+        function myf() {
+            alert("you pressed a key inside the input field");
+        }
+
+        function myf1(x) {
+            x.style.background = "yellow";
+        }
+
+        function myf2() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+
+        function myf3() {
+            alert("welcome to my page");
+        }
+    </script>
+</head>
+
+<body onload="myf3()">
+    <button onclick="getElementById('demo').innerHTML=Date()">time is</button>
+    <p id="demo"></p>
+    <br>
+    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+    <br>
+    <p>click the button to trigger a function.</p>
+    <button onclick="myFunction()">clock me</button>
+    <p id="demo"></p>
+    <br>
+    <input type="text" name="" id="" onkeypress="myf()">
+    <p>function is triggered when the user is pressing a key in the input filed.</p>
+    Enter your name : <input type="text" name="" id="fname" onblur="myf2()">
+    <input type="text" name="" id="" onfocus="myf1(this)">
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Demo: anonymous function</h1>
+    <script>
+        var showMessage = function() {
+            alert("Hello World");
+        };
+        showMessage();
+        var sayHello = function(firstName) {
+            alert("hello" + firstName);
+        };
+        var add = function() {
+            var a = parseInt(prompt("enter the numbers to add", "first number"));
+            var b = parseInt(prompt("enter the numbers to add", "second number"));
+            alert("the sum is" + eval(a + b));
+        };
+        showMessage();
+        sayHello("bill");
+        add();
+    </script>
+</body>
+
+</html>
