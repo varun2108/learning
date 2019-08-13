@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax</title>
+
+</head>
+
+<body>
+    <div id="demo">
+        <h1>The XMLHttpRequest Object</h1>
+        <button type="button" onclick="loaddoc()">click</button>
+    </div>
+    <script>
+        function loaddoc() {
+            var xhtml = new XMLHttpRequest();
+            xhtml.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhtml.open("GET", "ajax_info.txt", true);
+            xhtml.send();
+        }
+    </script>
+</body>
+
+</html>

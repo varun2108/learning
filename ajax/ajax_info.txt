@@ -1,0 +1,6 @@
+<html>
+<body>
+hi,,</br>
+this is the text for the first ajax
+</body>
+</html>

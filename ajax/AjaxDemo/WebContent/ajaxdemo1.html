@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+<script type="text/javascript">
+    function fun1() {
+        var a;
+        a = new XMLHttpRequest();
+        a.open("GET", "ajax.txt", true);
+        a.send();
+        a.onreadystatechange = function() {
+            if (a.readyState == 4 && a.status == 200) {
+                document.getElementById("mydiv").innerHTML = a.responseText;
+                document.getElementById("textArea").value = a.responseText;
+            }
+        };
+    }
+</script>
+
+<body>
+    <div id="mydiv" style="width: 300px; height: 30px;">click on the button below</div>
+    <textarea name="" id="textArea" cols="40" rows="5"></textarea>
+    <br>
+    <br>
+    <button type="button" onclick="fun1();">change content</button>
+</body>
+
+</html>
