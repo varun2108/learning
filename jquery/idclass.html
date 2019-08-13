@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        p {
+            padding: 20px;
+            font: 20px sans-serif;
+            background: khaki;
+        }
+    </style>
+    <Script>
+        $(document).ready(function() {
+            $("#colorbutton").click(function(e) {
+                $(".myclass").css("backgroundColor", "red");
+            });
+        });
+        $(document).ready(function() {
+            $("#restore").click(function(e) {
+                $(".myclass").css("backgroundColor", "");
+            });
+        });
+    </Script>
+</head>
+
+<body>
+    <p class="myclass">paragraph with my class "myclass"</p>
+    <p class="mypara">paragraph with classs "anothercalss"</p>
+
+    <div class="myclass">div with class "myclass"</div>
+    <div class="mydiv">div with class "mydiv"</div>
+
+    <a href="#" class="myclass">Anchor with class "myClas"</a><br>
+    <a href="#" class="myanchor">anchor with class "myanchor"</a>
+    <br>
+    <button id="colorbutton">change color</button>
+    <button id="restore">Restore</button>
+</body>
+
+</html>

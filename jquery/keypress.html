@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        p {
+            padding: 10px;
+            background: lightgreen;
+            display: none;
+        }
+        
+        div {
+            margin: 20px 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            var i = 0;
+            $('input[type="text"]').keypress(function() {
+                $("span").text(i += 1);
+                $("p").show.fadeOut();
+            });
+            $('input[type="text"]').keyup(function(e) {
+                if (e.keyCode == 8) {
+                    $("span").text(i -= 1);
+                    $("p").show.fadeOut();
+                }
+            })
+
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text">
+    <div>the no. pf characters typed: <span>0</span></div>
+    <div><strong>Note:</strong>Enter some thing inside the input box ans see the result.</div>
+    <p>Keypress is triggerd</p>
+</body>
+
+</html>

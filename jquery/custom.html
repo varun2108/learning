@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        p {
+            padding: 20px;
+            font: 20px sans-serif;
+            background: khaki;
+        }
+        
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(51, 238, 229);
+            border: solid 1px #c3c3cc;
+        }
+        
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <Script>
+        $(document).ready(function() {
+            $(".beg").hide();
+            $(".adv").hide();
+            $(".begbtn").click(function(e) {
+                $(".beg").fadeIn(1000);
+                $(".adv").fadeOut(1000);
+            });
+            $(".advbtn").click(function(e) {
+                $(".adv").fadeIn(1000);
+                $(".beg").fadeOut(1000);
+            });
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </Script>
+</head>
+
+<body>
+    <center>
+        <h1>Quinnox.Inc</h1>
+        <br>
+        <table style="box-shadow:0px 4px 8px 0 rgba(0,0,0,0.2);" width=500px>
+            <tr style="margin:10px;">
+                <th>BEGINER COURCES</th>
+                <th>ADVANCED COURCES</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="beg">
+                        <li>Core Java</li>
+                        <li>Java Script</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="adv">
+                        <li>Servalet</li>
+                        <li>Jsp</li>
+                        <li>hibernate</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center><button class="begbtn">Beginer Cources</button></center>
+                </td>
+                <td>
+                    <center><button class="advbtn">Advanced Cources</button></center>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br><br><br>
+    <div id="flip">click here for easy Registration</div>
+    <div id="panel">send a mail to admin@training.com</div>
+</body>
+
+</html>
